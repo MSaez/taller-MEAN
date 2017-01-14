@@ -1,4 +1,5 @@
 const Models = require('.././models/model');
+const app = require('../index');
 
 exports.init = (req, res) => {
 	res.send('hello workshop mean des controllers').end();
@@ -16,7 +17,7 @@ exports.create = (req, res) => {
 			console.log(err);
 		}
 		console.log(result);
-		res.json(result);
+		app.io.sockets.emit('update');
 	});
 }
 
