@@ -1,0 +1,5 @@
+para crear proyecto en node: npm init
+
+para instalar express: npm install -S express
+
+iniciar server: node [nombre del app] si es index.js solo poner index en caso contrario nombreapp.js
